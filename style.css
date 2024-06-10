@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --rdClr: hsl(0, 100%, 74%);
+  --grnClr: hsl(154, 59%, 51%);
+  --blClr: hsl(248, 32%, 49%);
+  --drkBlClr: hsl(249, 10%, 26%);
+  --gryBlClr: hsl(246, 25%, 77%);
+
+  --pnsFnt: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (min-width: 1000px) {
+  body {
+    font-family: var(--pnsFnt);
+    background-image: url(./img/bg-intro-desktop.png);
+    background-color: var(--rdClr);
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+
+  .info_container h1 {
+    font-size: 2.5rem;
+    max-width: 30rem;
+    margin-bottom: 0;
+    line-height: 2.5rem;
+  }
+
+  .info_container p {
+    max-width: 30rem;
+    font-size: 14px;
+  }
+
+  .input_container {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .form_container {
+    background-color: #fff;
+    padding: 2rem;
+    width: 88%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px gray;
+  }
+
+  .form_container p {
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+    color: var(--gryBlClr);
+    font-weight: 500;
+  }
+
+  span {
+    color: var(--rdClr);
+    font-weight: 700;
+  }
+
+  .top_button {
+    width: 88%;
+    margin-bottom: 1rem;
+    padding: 0.8rem 0 0.8rem 0;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--blClr);
+    color: #fff;
+  }
+
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+
+  input {
+    padding: 0.8rem 0 0.8rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--gryBlClr);
+  }
+
+  input::placeholder {
+    color: var(--drkBlClr);
+    font-weight: 700;
+  }
+
+  input:focus {
+    border: 1px solid var(--drkBlClr);
+  }
+
+  .form-control.success input {
+    border-color: var(--gryBlClr);
+  }
+
+  .form-control.error input {
+    border-color: var(--rdClr);
+  }
+
+  .buttom_button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem 0 0.8rem 0;
+    border-radius: 5px;
+    border: 1px solid var(--grnClr);
+    margin: 0;
+    background-color: var(--grnClr);
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  .buttom_button:hover {
+    background-color: hsla(154, 64%, 39%, 0.678);
+  }
+
+  .form-control small {
+    font-size: 10px;
+    margin-top: 5px;
+    color: var(--rdClr);
+    font-weight: 600;
+    margin-right: 2px;
+    display: flex;
+    justify-content: flex-end;
+
+    position: relative;
+    visibility: hidden;
+  }
+
+  .form-control.error small {
+    visibility: visible;
+  }
+
+  .form-control .fa-solid {
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    padding-top: 0.9rem;
+    padding-right: 1rem;
+    visibility: hidden;
+  }
+
+  .form-control.form-control.error .fa-solid {
+    visibility: visible;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    font-family: var(--pnsFnt);
+    background-image: url(./img/bg-intro-desktop.png);
+    background-color: var(--rdClr);
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+  }
+
+  .info_container h1 {
+    font-size: 2.5rem;
+    max-width: 28rem;
+    margin-bottom: 0;
+    line-height: 2.5rem;
+    text-align: center;
+
+    margin-top: 5rem;
+  }
+
+  .info_container p {
+    max-width: 28rem;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .input_container {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+
+  .form_container {
+    background-color: #fff;
+    padding: 2rem;
+    width: 88%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px gray;
+  }
+
+  .form_container p {
+    margin: 0;
+    font-size: 10px;
+    text-align: center;
+    color: var(--gryBlClr);
+    font-weight: 500;
+  }
+
+  span {
+    color: var(--rdClr);
+    font-weight: 700;
+  }
+
+  .top_button {
+    width: 88%;
+    margin-bottom: 1rem;
+    padding: 0.8rem 0 0.8rem 0;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--blClr);
+    color: #fff;
+  }
+
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    color: black;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+  }
+
+  input {
+    padding: 0.8rem 0 0.8rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--gryBlClr);
+  }
+
+  input::placeholder {
+    color: var(--drkBlClr);
+    font-weight: 700;
+  }
+
+  input:focus {
+    border: 1px solid var(--drkBlClr);
+  }
+
+  .form-control.success input {
+    border-color: var(--gryBlClr);
+  }
+
+  .form-control.error input {
+    border-color: var(--rdClr);
+  }
+
+  .buttom_button {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem 0 0.8rem 0;
+    border-radius: 5px;
+    border: 1px solid var(--grnClr);
+    margin: 0;
+    background-color: var(--grnClr);
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+
+  .buttom_button:hover {
+    background-color: hsla(154, 64%, 39%, 0.678);
+  }
+
+  .form-control small {
+    font-size: 10px;
+    margin-top: 5px;
+    color: var(--rdClr);
+    font-weight: 600;
+    margin-right: 2px;
+    display: flex;
+    justify-content: flex-end;
+
+    position: relative;
+    visibility: hidden;
+  }
+
+  .form-control.error small {
+    visibility: visible;
+  }
+
+  .form-control .fa-solid {
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+    padding-top: 0.9rem;
+    padding-right: 1rem;
+    visibility: hidden;
+  }
+
+  .form-control.form-control.error .fa-solid {
+    visibility: visible;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+}
